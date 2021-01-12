@@ -16,7 +16,7 @@ function runTheNumbers(num1,num2){
     }
 }
 
-//premise of FizzBuzz is to take 2 user inputs and combine all of their multiples 
+//premise of FizzBuzz is to ttake 2 user inputs and combine all of their multiples 
 //between 1 and 100 
 //if the loop count is a multiple of input 1, it is a fizz case
 //if the loop count is a multiple of input 2, it is a Buzz case
