@@ -38,7 +38,7 @@ function BuzzNumbers(num1,num2){
 }
 
 //CF Meta Strat Method
-function buzzNumbersIntoTable(num1,num2){
+function BuzzNumbersIntoTable(num1,num2){
     let returnArray = []
     for (let i = 1; 1 <= 100; i++) {
         //ternary operators used to make if statements with less room
@@ -70,10 +70,10 @@ function buzzItTemplate(){
     let val1 = document.getElementById('input1').value
     let val2 = document.getElementById('input2').value
 
-    output = buzzNumbersIntoTable(val1,val2)
+    output = BuzzNumbersIntoTable(val1,val2)
 
                                         //increment by 5
-    for (let i = 1; i < output.length; i +5) {
+    for (let i = 1; i < output.length; i+=5) {
         const element = array[i];
         resultsHTML += templateHTML.replace('{{val1}}', output[i])
                                    .replace('{{val2}}', output[i+1])

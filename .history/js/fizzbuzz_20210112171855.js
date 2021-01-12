@@ -73,7 +73,7 @@ function buzzItTemplate(){
     output = buzzNumbersIntoTable(val1,val2)
 
                                         //increment by 5
-    for (let i = 1; i < output.length; i +5) {
+    for (let i = 1; i < output.length; i+5) {
         const element = array[i];
         resultsHTML += templateHTML.replace('{{val1}}', output[i])
                                    .replace('{{val2}}', output[i+1])

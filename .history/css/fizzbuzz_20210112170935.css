@@ -1,0 +1,22 @@
+*{
+    color:black;
+}
+
+.btnWide{
+    width:100%;
+    
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color:black;
+}
+
+#Logo{
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      
+}
