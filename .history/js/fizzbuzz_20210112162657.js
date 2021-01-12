@@ -69,19 +69,5 @@ function buzzItTemplate(){
     let resultsHTML = headTemplate.innerHTML;
 
     //get the values the user entered
-    let val1 = document.getElementById('input1').value
-    let val2 = document.getElementById('input2').value
-
-    output = FizzBuzzD(val1,val2)
-
-                                        //increment by 5
-    for (let i = 1; i < output.length; i+=5) {
-        const element = array[i];
-        resultsHTML += templateHTML.replace('{{val1}}', output[i])
-                                   .replace('{{val2}}', output[i+1])
-                                   .replace('{{val3}}', output[i+2])
-                                   .replace('{{val4}}', output[i+3])
-                                   .replace('{{val5}}', output[i+4]);
-    }
-    document.getElementById('results').innerHTML = resultsHTML;
+    let val1 = document.getElementById('input1')
 }

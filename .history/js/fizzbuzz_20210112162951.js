@@ -74,14 +74,9 @@ function buzzItTemplate(){
 
     output = FizzBuzzD(val1,val2)
 
-                                        //increment by 5
+    
     for (let i = 1; i < output.length; i+=5) {
         const element = array[i];
-        resultsHTML += templateHTML.replace('{{val1}}', output[i])
-                                   .replace('{{val2}}', output[i+1])
-                                   .replace('{{val3}}', output[i+2])
-                                   .replace('{{val4}}', output[i+3])
-                                   .replace('{{val5}}', output[i+4]);
+        
     }
-    document.getElementById('results').innerHTML = resultsHTML;
 }

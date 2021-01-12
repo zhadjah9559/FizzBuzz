@@ -83,5 +83,5 @@ function buzzItTemplate(){
                                    .replace('{{val4}}', output[i+3])
                                    .replace('{{val5}}', output[i+4]);
     }
-    document.getElementById('results').innerHTML = resultsHTML;
+    document.getElementById('results').innerHTML = resultsHTML
 }
