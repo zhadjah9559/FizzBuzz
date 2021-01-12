@@ -8,42 +8,30 @@ document.getElementById("fizzButton").addEventListener("click", ()=>{
     } else{
         runTheNumbers(num1,num2)
    }
-
-
 })
 
 function runTheNumbers(num1,num2){
     //prints 1 to 100
     for (let i = 1; i <= 100; i++) {
 
-        //if the number isn't divisible by num1 and num2, print the number itself
-        if( ( (i % num1) != 0) && (  (i % num2) != 0) ){
-            document.getElementById("results").innerText += i
-        }
+        //if the number isn't divisible by one or tw
+        if( ( (i % num1) != 0) && (  (i % num2) != 0) )
 
         //if the number is divisible by num1, then print fizz
-        else if( (i % num1) == 0 ){
-            document.getElementById("results").innerText += "fizz"   
+        if( (i % num1) == 0 ){
+        
+            document.getElementById("results").innerText += "fizz";   
         }
 
+
+
         //if the number is divisible by num2, then print buzz
-        else if(  (i % num2) == 0 ){
-            document.getElementById("results").innerText += "buzz"   
+        if(  (i % num2) == 0 ){
+            document.getElementById("results").innerText += "buzz";   
         }
 
 
     }
-}
-
-function clearTheNumbers(){
-    document.getElementById("input1").value = ""
-    document.getElementById("input1").placeholder = "Enter a number"
-
-    document.getElementById("input2").value = ""
-    document.getElementById("input1").placeholder = "Enter a number"
-
-    document.getElementById("results").value = ""
-
 }
 
 //premise of FizzBuzz is to take 2 user inputs and combine all of their multiples 

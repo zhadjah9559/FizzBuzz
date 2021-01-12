@@ -18,7 +18,7 @@ function runTheNumbers(num1,num2){
 
         //if the number isn't divisible by num1 and num2, print the number itself
         if( ( (i % num1) != 0) && (  (i % num2) != 0) ){
-            document.getElementById("results").innerText += i
+            document.getElementById("results").innerText += i;   
         }
 
         //if the number is divisible by num1, then print fizz
