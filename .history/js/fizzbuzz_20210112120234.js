@@ -3,16 +3,16 @@ document.getElementById("fizzButton").addEventListener("click", ()=>{
     let num2 = document.getElementById("input2").value
 
     //input validation
-    if(  (num1 == null) && (num2 == null)  ){
-        alert("Number 1 must be less than Number 2")
+    if(  (num1 == ) && (num2 == 0)  ){
+    alert("Number 1 must be less than Number 2")
     } else{
-        runTheNumbers(num1,num2)
+    runTheNumbers(num1,num2)
    }
 })
 
 function runTheNumbers(num1,num2){
-    for (let i = 1; i <= 100; i++) {
-        document.getElementById("results").innerText += i;   
+    for (let i = num1; i < num2; i++) {
+        document.getElementById("results").innerText += loop;   
     }
 }
 

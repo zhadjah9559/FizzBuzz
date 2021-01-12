@@ -11,8 +11,8 @@ document.getElementById("fizzButton").addEventListener("click", ()=>{
 })
 
 function runTheNumbers(num1,num2){
-    for (let i = 1; i <= 100; i++) {
-        document.getElementById("results").innerText += i;   
+    for (let i = num1; i < num2; i++) {
+        document.getElementById("results").innerText += loop;   
     }
 }
 
