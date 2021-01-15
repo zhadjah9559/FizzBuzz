@@ -40,19 +40,15 @@ function BuzzNumbers(){
             output.push("buzz")  
         }        
     }
-  //results.innerText = output.join(", ")
+    results.innerText = output.join(", ")
     
-    let tBody = "";  
+    let tBody;  
 
     for (let i = 0; i < output.length; i+=5) {
-        tBody += `<tr> <td>${output[i]}</td> <td>${output[i+1]}</td>
-                  <td>${output[i+2]}</td> <td>${output[i+3]}</td> 
-                  <td>${output[i+4]}</td> </tr>` 
+        tBody += "<tr> " 
         
     }
-    document.getElementById("tBody").innerHTML = tBody
 }
-
 
 
 function clearTheNumbers(){

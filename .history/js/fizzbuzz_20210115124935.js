@@ -42,7 +42,7 @@ function BuzzNumbers(){
     }
   //results.innerText = output.join(", ")
     
-    let tBody = "";  
+    let tBody;  
 
     for (let i = 0; i < output.length; i+=5) {
         tBody += `<tr> <td>${output[i]}</td> <td>${output[i+1]}</td>

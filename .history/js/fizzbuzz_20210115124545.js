@@ -18,7 +18,7 @@ function BuzzNumbers(){
     let output = [];
 
     //prints 1 to 100
-    for (let i = 1; i <= 100; i++) {
+    for (let i = 0; i <= 100; i++) {
 
         //if the number isn't divisible by num1 and num2, print the number itself
         if( ( (i % num1) != 0) && (  (i % num2) != 0) ){
@@ -40,9 +40,9 @@ function BuzzNumbers(){
             output.push("buzz")  
         }        
     }
-  //results.innerText = output.join(", ")
+    results.innerText = output.join(", ")
     
-    let tBody = "";  
+    let tBody;  
 
     for (let i = 0; i < output.length; i+=5) {
         tBody += `<tr> <td>${output[i]}</td> <td>${output[i+1]}</td>

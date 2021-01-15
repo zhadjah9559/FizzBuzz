@@ -22,37 +22,26 @@ function BuzzNumbers(){
 
         //if the number isn't divisible by num1 and num2, print the number itself
         if( ( (i % num1) != 0) && (  (i % num2) != 0) ){
-            output.push(i)
+            output.
         }
         
         //if number is divisible by both
         else if( ( (i % num1) == 0) && (  (i % num2) == 0) ){
-            output.push("FizzBuzz")     
+            output += "FizzBuzz "    
         }
 
         //if the number is divisible by only num1, then print fizz
         else if( (i % num1) == 0 ){
-            output.push("fizz")    
+            output += "fizz "   
         }
 
         //if the number is divisible by only num2, then print buzz
         else if(  (i % num2) == 0 ){
-            output.push("buzz")  
+            output += "buzz "   
         }        
     }
-  //results.innerText = output.join(", ")
-    
-    let tBody = "";  
-
-    for (let i = 0; i < output.length; i+=5) {
-        tBody += `<tr> <td>${output[i]}</td> <td>${output[i+1]}</td>
-                  <td>${output[i+2]}</td> <td>${output[i+3]}</td> 
-                  <td>${output[i+4]}</td> </tr>` 
-        
-    }
-    document.getElementById("tBody").innerHTML = tBody
+    results.innerText = output
 }
-
 
 
 function clearTheNumbers(){
