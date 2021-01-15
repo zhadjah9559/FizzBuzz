@@ -40,7 +40,7 @@ function BuzzNumbers(num1,num2){
 //CF Meta Strat Method
 function buzzNumbersIntoTable(num1,num2){
     let returnArray = []
-    returnArray[0] = ""
+    return
     for (let i = 1; 1 <= 100; i++) {
         returnArray[i] = ( ( i%num1  == 0 ?  'Fizz' : '') + ( i%num2==0 ? 'Buzz' : '') || i) 
     }
@@ -73,7 +73,7 @@ function buzzItTemplate(){
     output = buzzNumbersIntoTable(val1,val2)
 
                                         //increment by 5
-    for (let i = 1; i < output.length; i +=5) {
+    for (let i = 1; i < output.length; i +5) {
         const element = array[i];
         resultsHTML += templateHTML.replace('{{val1}}', output[i])
                                    .replace('{{val2}}', output[i+1])

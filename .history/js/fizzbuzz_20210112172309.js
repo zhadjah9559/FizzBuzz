@@ -6,7 +6,7 @@ document.getElementById("fizzButton").addEventListener("click", ()=>{
     if(  (num1 == null) && (num2 == null)  ){
         alert("Number 1 must be less than Number 2")
     } else{
-        buzzItTemplate(num1,num2)
+        (num1,num2)
    }
 
 })
@@ -40,8 +40,8 @@ function BuzzNumbers(num1,num2){
 //CF Meta Strat Method
 function buzzNumbersIntoTable(num1,num2){
     let returnArray = []
-    returnArray[0] = ""
     for (let i = 1; 1 <= 100; i++) {
+        //ternary operators used to make if statements with less room
         returnArray[i] = ( ( i%num1  == 0 ?  'Fizz' : '') + ( i%num2==0 ? 'Buzz' : '') || i) 
     }
     return returnArray;
@@ -67,13 +67,13 @@ function buzzItTemplate(){
     let resultsHTML = headTemplate.innerHTML;
 
     //get the values the user entered
-    let val1 = parseInt(document.getElementById('input1').value)
-    let val2 = parseInt(document.getElementById('input2').value)
+    let val1 = document.getElementById('input1').value
+    let val2 = document.getElementById('input2').value
 
     output = buzzNumbersIntoTable(val1,val2)
 
                                         //increment by 5
-    for (let i = 1; i < output.length; i +=5) {
+    for (let i = 1; i < output.length; i +5) {
         const element = array[i];
         resultsHTML += templateHTML.replace('{{val1}}', output[i])
                                    .replace('{{val2}}', output[i+1])
