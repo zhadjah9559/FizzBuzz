@@ -40,6 +40,7 @@ function BuzzNumbers(){
             output.push("buzz")  
         }        
     }
+  //results.innerText = output.join(", ")
     
     let tBody = "";  
 

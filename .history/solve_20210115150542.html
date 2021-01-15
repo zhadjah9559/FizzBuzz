@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fizz Buzz Coding Challenge (Implementing the Meta Strat</title>
 
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/fizzbuzz.css">
@@ -15,7 +16,7 @@
   </head>
   <body>
       
-    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:  #F7DE58;">
+    <nav class="navbar navbar-expand-sm navbar-dark mb" style="background-color:  #F7DE58;">
         <a class="navbar-brand" href="#">FizzBuzz</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation"></button>
@@ -40,6 +41,32 @@
         </div>
     </nav>
 
+    <!-- <div class="container pt-5">
+
+        <div class="row">
+            <div class="col form-group">
+                <input class="form-control" id="input1" placeholder="Enter your Fizz Number:" type="number"/>
+            </div>
+            <div class="col form-group">
+                <input class="form-control" id="input2" placeholder="Enter your Buzz Number:" type="number"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 offset-3 form-group">
+                <button class="btn btn-primary btnWide" id="fizzButton">Click me</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 offset-6">
+                <p>I will Show Results</p>
+                <hr/>
+                <p id="results"></p>
+            </div>
+        </div>
+    </div> -->
+
+    <!--My attempt at the FizzBuzz Meta-->
     <div class="container pt-lg-5">
 
         <div class="row justify-content-center">
@@ -60,6 +87,8 @@
             <div class="row justify-content-center">
                 <label><span></span><input class="btn btn-primary" type="submit" onclick="BuzzNumbers()"></label>
             </div>
+
+            <!--<p id="results"></p>-->
 
             <table class="table table-striped">
                 <thead>

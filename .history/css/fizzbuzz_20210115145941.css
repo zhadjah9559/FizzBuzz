@@ -29,10 +29,10 @@
 }
 
 .container {
-    width:860px;
+    width:960px;
     height:540px;
     position:absolute;
-    top:60%;
+    top:50%;
     left:50%;
     margin-top:-320px;
     margin-left:-480px;
