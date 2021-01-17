@@ -47,7 +47,22 @@
 
 
 
-.table { background-color:#FFFFE0;border-collapse:collapse;color:#000;font-size:18px; }
-.table th { background-color:#FFDE59;color:white; }
-.table td, .table th { padding:5px;border:0; text-align:center;}
-.table td { border-bottom:1px solid black; }
+<!-- Start Styles. Move the 'style' tags and everything between them to between the 'head' tags -->
+<style type="text/css">
+.myOtherTable { background-color:#FFFFE0;border-collapse:collapse;color:#000;font-size:18px; }
+.myOtherTable th { background-color:#BDB76B;color:white;width:50%; }
+.myOtherTable td, .myOtherTable th { padding:5px;border:0; }
+.myOtherTable td { border-bottom:1px dotted #BDB76B; }
+</style>
+<!-- End Styles -->
+<table class="myOtherTable">
+<tr>
+<th>Table Header</th><th>Table Header</th>
+</tr>
+<tr>
+<td>Table cell 1</td><td>Table cell 2</td>
+</tr>
+<tr>
+<td>Table cell 3</td><td>Table cell 4</td>
+</tr>
+</table>
