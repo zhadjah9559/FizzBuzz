@@ -38,3 +38,14 @@ function BuzzNumbers(){
     }
     document.getElementById("tBody").innerHTML = tBody
 }
+
+function clearTheNumbers(){
+    document.getElementById("input1").value = ""
+    document.getElementById("input1").placeholder = "Enter your Fizz number"
+
+    document.getElementById("input2").value = ""
+    document.getElementById("input1").placeholder = "Enter your fizz number"
+
+    document.getElementById("results").value = ""
+}
+
